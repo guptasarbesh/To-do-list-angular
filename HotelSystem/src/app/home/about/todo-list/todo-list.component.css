@@ -1,0 +1,42 @@
+section .major{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 40px 0 0 0;
+    font-family: "Helvetica 35 thin";
+    font-weight: bold;
+    overflow-y: hidden;
+   
+}
+
+.major button
+{
+    background-color:red;
+    width:8%;
+    border-radius:0.5em;
+}
+
+input
+{
+    width: 50%;
+    padding:15px;
+    border-radius:0.5em;
+    background-color: aqua;
+}
+
+table th label{
+    padding:  25px;
+}
+table th button{
+    float: right;
+    width:100%;
+}
+.major h1{
+    font-weight: bold;
+    font-size: 44px;
+}
+
+input[type=checkbox]:checked + label.itemsof{
+    text-decoration: line-through;
+  }

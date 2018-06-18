@@ -1,0 +1,16 @@
+<h1>Home page</h1>
+<input type="text" [(ngModel)]="userName" placeholder="Type your Name"/>
+<button type="button" class="btn btn-danger" (click)="showDiv=true;"> Click Me to do</button>
+<app-about *ngIf="showDiv" [nameProperty]="userName">
+  
+</app-about>
+
+<input type="number" placeholder="Enter array index" [(ngModel)]="arrayIndex"/>
+<input type="btn" class="btn btn-primary" (click)="convertVar(arrayIndex)"/>
+
+<div *ngIf="arrayIndex && myArray[parseInt(arrayIndex)]">
+    <h1 *ngFor="let item of myArray[parseInt(arrayIndex)]">{{item}}</h1>
+</div>
+<h1 *ngIf="!arrayIndex || !myarray[parseInt(arrayIndex)]">Invalid Index</h1>
+
+
